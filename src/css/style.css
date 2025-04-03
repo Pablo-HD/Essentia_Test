@@ -8,6 +8,18 @@ table {
     width: 100%;
     border-spacing: 0;
 }
+
+.toggle-container {
+    display: none;
+}
+
+@media(max-width: 450px){
+    .toggle-container {
+    display: inline-block;
+    margin-left: 15px;
+    }
+}
+
 .container {
     max-width: 600px;
     margin: 0 auto;
@@ -24,10 +36,7 @@ table {
     font-size: 14px;
     margin: 0 15px;
 }
-.toggle-container {
-    display: inline-block;
-    margin-left: 15px;
-}
+
 .toggle-button {
     cursor: pointer;
     background-color: #ffffff;
@@ -47,7 +56,7 @@ table {
     font-size: 16px;
 }
 .content h1 {
-    font-size: 20px;
+    font-size: 17px;
     color: #000000;
 }
 .content p {
@@ -63,7 +72,7 @@ table {
     padding: 20px;
 }
 .dark-section h2 {
-    font-size: 22px;
+    font-size: 30px;
     font-weight: bold;
     color: #ffffff;
 }
@@ -109,6 +118,59 @@ table {
     justify-content: center;
     margin: 0 auto 10px;
 }
+
+.white-icon{
+    display: none;
+}
+
+.bullet-list {
+    list-style: none;
+    padding: 0;
+}
+.bullet-list li {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #333333;
+}
+.bullet-list li::before {
+    content: '\2022'; /* Bullet point */
+    font-size: 40px;
+    color: #6c2dc7;
+    margin-right: 10px;
+}
+
+.protein-section {
+    background-image: url('../img/Grupo_de_máscara_2@2x.png'); 
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+}
+
+.protein-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.protein-section h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #6c2dc7;
+}
+
 /* Dark Mode */
 body.dark-mode {
     background-color: #000000 !important;
@@ -117,7 +179,23 @@ body.dark-mode {
 body.dark-mode .container {
     background-color: #111111 !important;
 }
-body.dark-mode .content h1, body.dark-mode .content p {
+
+body.dark-mode .white-icon{
+    display: block;
+}
+
+body.dark-mode .dark-icon{
+    display: none;
+}
+
+body.dark-mode .gray-section {
+    background-color: #111111 !important;
+}
+body.dark-mode .content h1, body.dark-mode .content p, body.dark-mode .icons {
+    color: #ffffff !important;
+}
+
+.icons {
     color: #ffffff !important;
 }
 body.dark-mode .highlight {
