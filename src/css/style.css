@@ -128,12 +128,13 @@ td {
 .content h1 {
     font-size: 17px;
     color: var(--bg-o2-light);
-    font-family: 'Helvetica Neue Bold', Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
 }
 .content p {
     margin-bottom: 15px;
     color: var(--bg-o3-medium-dark);
-    font-family: 'Helvetica Neue Regular', Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 17px;
 }
 .highlight {
@@ -160,7 +161,7 @@ td {
 }
 .dark-section p {
     color: var(--bg-o1-light);
-    font-family: 'Helvetica Neue Regular', Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 17px;
 
 }
@@ -180,15 +181,15 @@ td {
 .gray-section {
     background-color: var(--bg-03-light);
     padding: 17px;
-    font-family: 'Helvetica Neue Regular', Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 
 .gray-section p {
-    font-family: 'Helvetica Neue Regular', Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     color: var(--bg-o2-light);
     margin-top: 20px;
     margin-bottom: 18px;
-    max-width: 327px;
+    max-width: 290px;
     padding-left: 24px;
     padding-right: 19px;
 }
@@ -274,6 +275,69 @@ td {
     color: var(--texto-01-light);
 }
 
+.whey {
+    display: flex;
+    margin-top: 25px;
+}
+
+
+.whey p {
+    margin: 0;
+    font-weight: 400;
+}
+
+.whey img {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.whey h3 {
+    margin-bottom: 0;
+    font-family: 'Helvetica Neue Bold', Helvetica, sans-serif;
+    color: var(--texto-01-light);
+}
+
+.whey h5 {
+    margin: 0;
+    font-family:  Helvetica, sans-serif;
+    font-weight: 400;
+    color: var(--bg-o3-medium-grey);
+}
+
+.whey h4 {
+    margin-bottom: 0;
+    font-family:  Helvetica, sans-serif;
+    font-weight: bold;
+    color: var(--bg-o3-medium-grey);
+}
+
+.composition-content{
+    font-family:  Helvetica, sans-serif;
+    color: var(--bg-o3-medium-grey);
+    padding: 0 23px;
+}
+
+.composition-content h3 {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.composition-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.composition-content li::before {
+    margin-bottom: 5px;
+    content: '\2022'; /* Bullet point */
+    font-size: 16px;
+    margin-right: 10px;
+    
+}
+
+
+
 /* Dark Mode */
 body.dark-mode {
     background-color: #000000 !important;
@@ -298,7 +362,7 @@ body.dark-mode .content h1, body.dark-mode .content p, body.dark-mode .icons {
     color: var(--bg-o1-light) !important;
 }
 body.dark-mode .highlight {
-    color: var(--texto-01-dark) ;
+    color: var(--texto-01-light) ;
 }
 
 @media(max-width: 450px){
@@ -312,8 +376,7 @@ body.dark-mode .highlight {
     }
 
     .protein-section h3 {
-        font-size: 18
-        px;
+        font-size: 18px;
         margin-bottom: 10px;
     }
     
