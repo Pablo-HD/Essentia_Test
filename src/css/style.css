@@ -43,16 +43,17 @@
 }
 
 :root {
+    --bg-o1-light: #FFFFFF;
+    --bg-03-light: #EDEDED;
     --texto-01-dark: #4A3683;
     --texto-01-light: #7C68B5;
-    --bg-03-dark: #BBBBBB;
-    --bg-03-light: #EDEDED;
-    --bg-o2-dark: #000000;
-    --bg-o2-light: #141414;
     --bg-o1-dark: #CDCDCD;
+    --bg-03-dark: #BBBBBB;
     --bg-o3-medium-dark: #666666;
+    --bg-o4-light-grey: #847F7A;
     --bg-o3-medium-grey: #333333;
-    --bg-o1-light: #FFFFFF;
+    --bg-o2-light: #141414;
+    --bg-o2-dark: #000000;
 }
 
 body {
@@ -275,41 +276,45 @@ td {
     color: var(--texto-01-light);
 }
 
-.whey {
+.campaing {
     display: flex;
     margin-top: 25px;
 }
 
 
-.whey p {
+.campaing p {
     margin: 0;
     font-weight: 400;
 }
 
-.whey img {
+.campaing img {
     width: 150px;
     height: 150px;
     margin-top: 20px;
 }
 
-.whey h3 {
+.campaing h3 {
     margin-bottom: 0;
     font-family: 'Helvetica Neue Bold', Helvetica, sans-serif;
     color: var(--texto-01-light);
 }
 
-.whey h5 {
+.campaing h5 {
     margin: 0;
     font-family:  Helvetica, sans-serif;
     font-weight: 400;
     color: var(--bg-o3-medium-grey);
 }
 
-.whey h4 {
+.campaing h4 {
     margin-bottom: 0;
     font-family:  Helvetica, sans-serif;
     font-weight: bold;
     color: var(--bg-o3-medium-grey);
+}
+
+.campaing-flavors{
+    font-family: Helvetica, sans-serif;
 }
 
 .composition-content{
@@ -333,9 +338,104 @@ td {
     content: '\2022'; /* Bullet point */
     font-size: 16px;
     margin-right: 10px;
-    
 }
 
+.dark-section-omega{
+    background-color: var(--bg-o2-dark);
+    color: var(--bg-o1-light);
+    padding: 0 20px;
+    height: 247px;
+    text-align: center;
+    width: 100%;
+}
+
+.dark-section-omega h2{
+    font-family: 'Helvetica Neue Bold', Helvetica, sans-serif;
+    color: var(--texto-01-light);
+    padding: 0 40px;
+    font-size: 21px;
+}
+
+.dark-section-omega p{
+    font-family: 'Helvetica Neue Bold', Helvetica, sans-serif;
+    color: var(--bg-o1-light);
+    padding: 0 40px;
+    font-size: 17px;
+}
+
+
+.dark-section-btns{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* 
+.dark-section-omega hr{
+    width: 270px;
+    border-color: var(--texto-01-light);
+} */
+
+.dark-section-btns button{
+    margin-top: 0;
+    width: 121px;
+    height: 46px;
+    border-radius: 4px;
+}
+
+
+.campaing-endurance {
+    display: flex;
+    margin: 40px 20px 40px 24px;
+    font-family: Helvetica, sans-serif;
+}
+
+
+
+.campaing-endurance h3 {
+    margin-bottom: 0;
+    font-weight: bold;
+    color: var(--texto-01-light);
+    padding: 0 0 17px 25px;
+    font-size: 20PX;
+}
+
+.campaing-endurance p {
+    margin: 0;
+    font-weight: 400;
+    padding-left: 25px;
+}
+
+.emphasis{
+    padding: 4px 5px!important;
+    margin-left: 21px !important;
+    background-color: var(--bg-o4-light-grey);
+    max-width: 125px;
+    height: 18px;
+    border-radius: 3px;
+    color: var(--bg-o1-light);
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.campaing-endurance a {
+    padding-left: 25px;
+}
+
+.campaing-endurance img {
+    width: 138px;
+    height: 163px;
+}
+
+.line{
+    text-decoration: line-through;
+}
+
+.final-sectiion{
+    background-image: url(../img/Grupo\ 2501@2x.png);
+    background-size: cover;
+    width: 100%;
+    height: 163px;
+}
 
 
 /* Dark Mode */
