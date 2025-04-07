@@ -507,7 +507,7 @@ body.dark-mode .content h1, body.dark-mode .gray-section p,
 body.dark-mode .nutrient, body.dark-mode .nutrient span, body.dark-mode .content p,
 body.dark-mode .icons, body.dark-mode .bullet-list li, 
 body.dark-mode .composition-content, body.dark-mode .composition-content li,
-body.dark-mode .campaing h5,body.dark-mode .campaing h4{
+body.dark-mode .campaing h5,body.dark-mode .campaing h4, body.dark-mode .campaing-flavors{
     color: var(--bg-o1-light) !important;
 }
 
