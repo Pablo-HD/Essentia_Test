@@ -2,9 +2,16 @@
     font-family:'Helvetica Neue Bold';
     src: url('../fonts/HelveticaNeue-Bold.otf');
     font-weight: bold;
-    font-style: normal;
-    
+    font-style: normal;    
 }
+
+@font-face {
+    font-family:'Helvetica Neue Black';
+    src: url('../fonts/Proxima\ Nova\ Black.otf');
+    font-weight: bold;
+    font-style: normal;    
+}
+
 @font-face {
     font-family:'Helvetica Neue Regular';
     src: url('../fonts/HelveticaNeue-Roman.otf');
@@ -95,7 +102,7 @@ td {
 .header {
     background-color: var(--bg-o2-dark);
     text-align: center;
-    padding: 10px;
+    height: 36px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -124,7 +131,7 @@ td {
     display: block;
 }
 .content {
-    padding: 20px;
+    padding: 40px 20px;
 }
 .content h1 {
     font-size: 17px;
@@ -167,8 +174,9 @@ td {
 
 }
 .button {
-    width: 200px;
-    margin: 20px auto;
+    width: 220px;
+    height: 45px;
+    margin: 20px 0 0 0;
     padding: 10px;
     text-align: center;
     background-color: var(--bg-o1-light);
@@ -221,7 +229,7 @@ td {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 10px;
+    margin: 0 auto 20px;
 }
 
 .white-icon{
@@ -237,14 +245,14 @@ td {
     display: flex;
     color: var(--bg-o3-medium-grey);
     align-items: center;
-    font-size: 20px;
-    font-family: 'Roboto Light', Helvetica, sans-serif;
+    font-size: 17px;
+    font-family: Helvetica, sans-serif;
     height: 24px;
 }
 .bullet-list li::before {
-    content: '\2022'; /* Bullet point */
+    content: '\2022';
     font-size: 40px;
-    color: #6c2dc7;
+    color: var(--texto-01-light);
     margin-right: 10px;
 }
 
@@ -271,7 +279,7 @@ td {
 }
 
 .protein-section h2 {
-    font-family: 'Proxima Nova Bold', sans-serif ;
+    font-family: 'Helvetica Neue Black', Helvetica, sans-serif ;
     font-size: 21px;
     color: var(--texto-01-light);
 }
@@ -297,6 +305,7 @@ td {
     margin-bottom: 0;
     font-family: 'Helvetica Neue Bold', Helvetica, sans-serif;
     color: var(--texto-01-light);
+    font-size: 17px
 }
 
 .campaing h5 {
@@ -304,6 +313,8 @@ td {
     font-family:  Helvetica, sans-serif;
     font-weight: 400;
     color: var(--bg-o3-medium-grey);
+    font-size: 12px
+
 }
 
 .campaing h4 {
@@ -311,10 +322,15 @@ td {
     font-family:  Helvetica, sans-serif;
     font-weight: bold;
     color: var(--bg-o3-medium-grey);
+    font-size: 16px
 }
 
 .campaing-flavors{
     font-family: Helvetica, sans-serif;
+}
+
+.omega-img img{
+    margin-top: 40px;
 }
 
 .composition-content{
@@ -326,11 +342,16 @@ td {
 .composition-content h3 {
     margin-bottom: 0;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .composition-content ul {
     list-style: none;
     padding: 0;
+}
+
+.composition-content li{
+    margin-bottom: 7px;
 }
 
 .composition-content li::before {
@@ -352,7 +373,7 @@ td {
 .dark-section-omega h2{
     font-family: 'Helvetica Neue Bold', Helvetica, sans-serif;
     color: var(--texto-01-light);
-    padding: 0 40px;
+    padding: 0 12px;
     font-size: 21px;
 }
 
@@ -360,19 +381,19 @@ td {
     font-family: 'Helvetica Neue Bold', Helvetica, sans-serif;
     color: var(--bg-o1-light);
     padding: 0 40px;
+    border-bottom: solid 2px var(--texto-01-light);
+    padding: 0 12px 12px 12px 12px;
     font-size: 17px;
+    width: 244px;
+    margin: 0 auto;
 }
 
 
 .dark-section-btns{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 10px;
 }
-/* 
-.dark-section-omega hr{
-    width: 270px;
-    border-color: var(--texto-01-light);
-} */
 
 .dark-section-btns button{
     margin-top: 0;
