@@ -126,6 +126,15 @@ td {
     border-radius: 5px;
     font-size: 12px;
 }
+
+.omega-banner{
+    background-image: url("../img/CENA\ -\ Omega\ Brain\ -\ ALTA-002@2x.png");
+    width: 100%;
+    display: block;
+    height: 430px;
+    background-size: cover;
+}
+
 .banner img, .image-section img {
     width: 100%;
     display: block;
@@ -499,19 +508,42 @@ body.dark-mode .dark-icon{
 }
 
 body.dark-mode .gray-section {
-    background-color: #111111 !important;
+    background-color: var(--bg-o3-medium-grey) !important;
 }
-body.dark-mode .content h1, body.dark-mode .content p, body.dark-mode .icons {
+
+body.dark-mode .content h1, body.dark-mode .gray-section p,
+body.dark-mode .nutrient, body.dark-mode .nutrient span, body.dark-mode .content p,
+body.dark-mode .icons, body.dark-mode .bullet-list li, 
+body.dark-mode .composition-content, body.dark-mode .composition-content li,
+body.dark-mode .campaing h5,body.dark-mode .campaing h4{
     color: var(--bg-o1-light) !important;
 }
+
 body.dark-mode .highlight {
     color: var(--texto-01-light) ;
 }
 
+body.dark-mode .toggle-button{
+    background-image: url("../Icons/light-sun.svg");
+}
+
 @media(max-width: 450px){
+
+    .toggle-button{
+        background-image: url("../Icons/light-moon.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #000000;
+        width: 30px;
+        height: 30px;
+    }
+
     .toggle-container {
     display: inline-block;
     margin-left: 15px;
+    position: relative;
+    left: 85%;     
+    top: 1%;
     }
 
     .release {
